@@ -44,3 +44,5 @@ class ssh::service(
   hasrestart => true,
   }
 }
+========
+puppet module install puppetlabs-apache --version 3.2.0
