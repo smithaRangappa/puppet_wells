@@ -13,3 +13,13 @@ class params:: {
       }
   }
 }
+
+
+===================
+class shh(
+  String $package_name = $::params::pacakge_name,
+  String $service_name = $::params::service_name,
+  ) inherits ::ssh::params {
+  class { 'ssh::install':: } ->
+  class { 'ssh::service':: }
+}
